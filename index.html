@@ -61,6 +61,9 @@ body{background:var(--bg);color:var(--text);font-family:'Poppins',system-ui,-app
 .body ul{margin:10px 0 4px 20px}
 .body li{margin-bottom:8px}
 .body li::marker{color:var(--orange)}
+html{scroll-behavior:smooth}
+.section,[id]{scroll-margin-top:16px}
+.section:target{border-color:var(--orange);box-shadow:0 0 0 3px var(--dot)}
 .body p+p,.body p+ul,.body ul+p{margin-top:10px}
 .badge{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;font-weight:500;padding:4px 12px;border-radius:999px;background:var(--badge-bg);color:var(--badge-fg);margin-top:12px}
 .badge::before{content:'●';font-size:8px}
@@ -185,15 +188,28 @@ footer b{color:var(--orange);font-weight:600}
     </div>
   </div>
 
-  <div class="section">
-    <div class="section-header"><span class="num">08</span><h2>Your Rights</h2></div>
+  <div class="section" id="delete-data">
+    <div class="section-header"><span class="num">08</span><h2>Your Rights &amp; Data Deletion</h2></div>
     <div class="body">
       <ul>
-        <li><strong>Use without an account</strong> &mdash; the app works fully without signing in.</li>
-        <li><strong>Delete cloud data</strong> &mdash; use &ldquo;Delete my cloud backup&rdquo; in the app.</li>
-        <li><strong>Delete your account data</strong> &mdash; email us from your sign-in address and we will remove your account and any remaining backup data.</li>
+        <li><strong>Use without an account</strong> &mdash; Mentor Vocab works fully without signing in.</li>
         <li><strong>Access or correct</strong> &mdash; email us and we will help. Users in the EEA and other regions keep all rights granted by their local data protection laws.</li>
       </ul>
+
+      <p id="delete-backup"><strong>Delete only your cloud data (keep your account)</strong></p>
+      <ul>
+        <li>Open <strong>Mentor Vocab &rarr; My Account &rarr; Delete my cloud backup</strong> and confirm.</li>
+        <li>Or email us at <a href="mailto:sojeebacademy@gmail.com?subject=Mentor%20Vocab%20-%20Delete%20my%20data">sojeebacademy@gmail.com</a> from your sign-in email address, with the subject &ldquo;Mentor Vocab &ndash; Delete my data&rdquo;.</li>
+      </ul>
+
+      <p id="delete-account"><strong>Delete your account and all associated data</strong></p>
+      <ul>
+        <li>Email <a href="mailto:sojeebacademy@gmail.com?subject=Mentor%20Vocab%20-%20Delete%20my%20account">sojeebacademy@gmail.com</a> from the Google email address you used to sign in to <strong>Mentor Vocab</strong>, with the subject &ldquo;Mentor Vocab &ndash; Delete my account&rdquo;.</li>
+        <li>We will confirm and complete the deletion within <strong>30 days</strong>.</li>
+      </ul>
+
+      <p><strong>What is deleted:</strong> your sign-in account (name, email, profile photo, account ID) and your entire cloud backup (progress, exam history, daily activity, settings, streak, read-word marks, usage time, and device model).</p>
+      <p><strong>What is kept:</strong> nothing is kept on our servers after deletion. Data stored only on your device stays there until you clear app data or uninstall the app, which you can do at any time. Short-lived technical copies held by Google&rsquo;s infrastructure may take a little longer to be fully purged, as described in <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy Information</a>.</p>
     </div>
   </div>
 
